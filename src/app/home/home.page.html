@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title> Sign Up </ion-title>
+    <!-- <ng-container *ngFor="let language of languageList">
+      <a href="/{{language.code}}/">
+        <button class="button">{{language.label}}</button>
+      </a>
+    </ng-container> -->
+  </ion-toolbar>
+</ion-header>
+
+<p *ngIf="submitAttempt" style="color: #ea6153;">
+  Please fill out all details accurately.
+</p>
+<p *ngIf="msg.length>0" style="color: rgb(48, 189, 48);">
+  {{msg}}
+</p>
+<ion-list lines="none">
+  <form [formGroup]="slideOneForm">
+    <ion-item>
+      <ion-label position="floating">Name</ion-label>
+      <ion-input formControlName="name" type="text"
+        [class.invalid]="!slideOneForm.controls.name.valid && (slideOneForm.controls.name.dirty || submitAttempt)">
+      </ion-input>
+    </ion-item>
+    <ion-item *ngIf="!slideOneForm.controls.name.valid  && (slideOneForm.controls.name.dirty || submitAttempt)">
+      <p>Please enter a valid name.</p>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Phone Number</ion-label>
+      <ion-input formControlName="phone" type="text"
+        [class.invalid]="!slideOneForm.controls.phone.valid && (slideOneForm.controls.dob.dirty || submitAttempt)">
+      </ion-input>
+    </ion-item>
+    <ion-item *ngIf="!slideOneForm.controls.phone.valid  && (slideOneForm.controls.phone.dirty || submitAttempt)">
+      <p>Please enter a valid Phone Number.</p>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Date of Birth</ion-label>
+      <ion-input formControlName="dob" type="Date"
+        [class.invalid]="!slideOneForm.controls.dob.valid && (slideOneForm.controls.dob.dirty || submitAttempt)">
+      </ion-input>
+    </ion-item>
+    <ion-item *ngIf="!slideOneForm.controls.dob.valid  && (slideOneForm.controls.dob.dirty || submitAttempt)">
+      <p>Please enter a valid dob.</p>
+    </ion-item>
+  </form>
+</ion-list>
+<ion-button expand="full" color="primary" [disabled]="slideOneForm.invalid" (click)="save()">Create Account!
+</ion-button>

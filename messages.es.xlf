@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="cd299a9a7bd5d4962e27040b729b21cb4eb7807a" datatype="html">
+        <source>Localization Demo in Angular using i18n</source>
+        <target>Demostración de localización en angular usando i18n</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="myName" datatype="html">
+        <source>Hello, My name is Darshan</source>
+        <target>Hola, mi nombre es Darshan</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
+Now create Hindi messages.hi.xlf translation file which looks like<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="cd299a9a7bd5d4962e27040b729b21cb4eb7807a" datatype="html">
+        <source>Localization Demo in Angular using i18n</source>
+        <target>Demostración de localización en angular usando i18n</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="myName" datatype="html">
+        <source>Hello, My name is Darshan</source>
+        <target>Hola, mi nombre es Darshan</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
+
+
+
+
